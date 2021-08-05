@@ -7,7 +7,126 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-		<h1>HS GPA Calculator</h1>
+		<div class="centerBox">
+			<div class="headderpadding">
+				<h1>HS GPA Calculator</h1>
+			</div>
+			<div class="flexCont">
+				<div id="results">
+					<div id="unweightedGPACont">Unweighted GPA: 
+						<span id="unweightedGPARes"></span>
+					</div>
+					<div id="weightedGPACont">Weighted GPA: 
+						<span id="weightedGPAres"></span>
+					</div>
+				</div>
+				<div id="forms">
+					<div id="currentGPACreditsView">
+						<label for="CurrentGPAUn">Current GPA Unweighted</label>
+						<input type="number" id="CurrentGPAUn" name="CurrentGPAUn" value="0"><br>
+						<label for="CurrentGPAW">Current GPA Weighted</label>
+						<input type="number" id="CurrentGPAW" name="CurrentGPAW" value="0"><br>
+						<label for="CurrentCredits">Current Credits</label>
+						<input type="number" id="CurrentCredits" name="CurrentCredits" value="0">
+					</div> 
+					<div id="classView">
+						<table id="classTable">
+							<tr class="classes">
+								<th>className</th>
+								<th>classGrade</th>
+								<th>classCredits</th>
+								<th>classType</th>
+							</tr>
+							<tr class="classes">
+								<th>
+									<input type="text" class="className" name="className">
+								</th>
+								<th>						
+									<select class="classGrade" name="classGrade">
+										<option value="4">A/A+</option>
+										<option value="3.7">A-</option>
+										<option value="3.3">B+</option>
+										<option value="3.0">B</option>
+										<option value="2.7">B-</option>
+										<option value="2.3">C+</option>
+										<option value="2.0">C</option>
+										<option value="1.7">C-</option>
+										<option value="1.3">D+</option>
+										<option value="1.0">D</option>
+										<option value="0">F</option>
+									</select>
+								</th>
+								<th>
+									<input type="number" class="classCredits" name="classCredits" value="0" >
+								</th>
+								<th>
+									<select  class="classType" name="classType">
+										<option value="0">Regular</option>
+										<option value=".5">Honors (+.5)
+										</option>
+										<option value="1">AP (+1)</option>
+									</select>
+								</th>
+								<th>
+								<button type="button" onclick="removeClassTb(this)">Remove Class</button> 
+								</th>
+							</tr>
+							<tr class="classes">
+								<th>
+									<input type="text" class="className" name="className">
+								</th>
+								<th>						
+									<select class="classGrade" name="classGrade">
+										<option value="4">A/A+</option>
+										<option value="3.7">A-</option>
+										<option value="3.3">B+</option>
+										<option value="3.0">B</option>
+										<option value="2.7">B-</option>
+										<option value="2.3">C+</option>
+										<option value="2.0">C</option>
+										<option value="1.7">C-</option>
+										<option value="1.3">D+</option>
+										<option value="1.0">D</option>
+										<option value="0">F</option>
+									</select>
+								</th>
+								<th>
+									<input type="number" class="classCredits" name="classCredits" value="0" >
+								</th>
+								<th>
+									<select  class="classType" name="classType">
+										<option value="0">Regular</option>
+										<option value=".5">Honors (+.5)
+										</option>
+										<option value="1">AP (+1)</option>
+									</select>
+								</th>
+								<th>
+								<button type="button" onclick="removeClassTb(this)">Remove Class</button> 
+								</th>
+							</tr>
+						</table>
+						<button type="button" id="addClass" onclick="addClassButton()">Add Class</button> 
+					</div> 
+					<div id="gradeView">
+						 <ul>
+							<li><label for="AHistore">A</label><input type="number" class="gradeViewInputs" data-gradeWorth="4" name="A" value="0"></li>
+							<li><label for="A-">A-</label><input type="number" class="gradeViewInputs" data-gradeWorth="3.7" name="AMHistore" value="0"></li>
+							<li><label for="B+">B+</label><input type="number" class="gradeViewInputs" data-gradeWorth="3.3" name="B+" value="0"></li>
+							<li><label for="B">B</label><input type="number" class="gradeViewInputs" data-gradeWorth="3" name="B" value="0"></li>
+							<li><label for="B-">B-</label><input type="number" class="gradeViewInputs" data-gradeWorth="2.7" name="B-" value="0"></li>
+							<li><label for="C+">C+</label><input type="number" class="gradeViewInputs" data-gradeWorth="2.3" name="C+" value="0"></li>
+							<li><label for="C">C</label><input type="number" class="gradeViewInputs" data-gradeWorth="2" name="C" value="0"></li>
+							<li><label for="C-">C-</label><input type="number" class="gradeViewInputs" data-gradeWorth="1.7" name="C-" value="0"></li>
+							<li><label for="D+">D+</label><input type="number" class="gradeViewInputs" data-gradeWorth="1.3" name="D+" value="0"></li>
+							<li><label for="D">D</label><input type="number" class="gradeViewInputs" data-gradeWorth="1.0" name="D" value="0"></li>
+							<li><label for="F/E">F/E</label><input type="number" class="gradeViewInputs" data-gradeWorth="0" name="F/E" value="0"></li>
+						</ul> 
+					</div> 
+				</div>
+			</div>
+		</div>
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
     <script src="script.js"></script>
   </body>
 </html>

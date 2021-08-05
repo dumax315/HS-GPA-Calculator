@@ -1,0 +1,100 @@
+/* style for number inputs is from https://www.cssscript.com/number-spinner-quantity-input/ haven't done yet*/
+
+html {
+	height: 100%;
+}
+body {
+	margin: 0px;
+	background-attachment: fixed;
+	height: 100%;
+	background-image: url("background.jpg");
+	background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+	color:rgb(220, 221, 222);
+	
+}
+
+.centerBox {
+	max-width: 800px;
+	min-height: 100%;
+	margin: auto;
+	background-color:#28262C;
+}
+
+#forms {
+	width: 60%;
+}
+
+#results {
+	width: 40%;
+	border: 5px solid red;
+	margin: 1em;
+	padding: 1em;
+}
+
+.flexCont {
+	display: flex;
+	flex-direction: row-reverse; 
+	margin-top: -1em;
+}
+
+#forms > div{
+	overflow: auto;
+	border: 5px solid red;
+	margin: 1em;
+	padding: 1em;
+}
+
+#gradeView {
+	/* display: flex;
+	flex-direction: column; */
+}
+
+li > label {
+	width: 5em;
+	margin-bottom: 1em;
+	display: inline-block;
+}
+
+li > input {
+	width: 40%;
+	height: 2em;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+input {
+	width: 60px;
+}
+
+.headderpadding {
+	padding:1em;
+}
+
+h1 {
+	margin: 0px;
+	text-align: center;
+}
+#currentGPACreditsView > label {
+	margin-bottom: 1em;
+	display: inline-block;
+	width: 12em;
+}
+@media (max-width: 800px) {
+  .flexCont {
+    display: block;
+  }
+	#forms {
+		margin: auto;
+		width: calc(100% - 100px);
+	}
+	#results {
+		margin-left: 66px;
+		width: calc(100% - 350px);
+	}
+}
