@@ -28,7 +28,9 @@ body {
 
 #results {
 	width: 40%;
-	border: 5px solid red;
+	/* border: 5px solid red; */
+	background-color: #36393f;
+	border-radius: 25px;
 	margin: 1em;
 	padding: 1em;
 }
@@ -41,7 +43,9 @@ body {
 
 #forms > div{
 	overflow: auto;
-	border: 5px solid red;
+	/* border: 5px solid red; */
+	background-color: #36393f;
+	border-radius: 25px;
 	margin: 1em;
 	padding: 1em;
 }
